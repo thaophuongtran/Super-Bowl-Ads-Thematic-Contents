@@ -105,7 +105,7 @@ youtube %>% select(brand,Funny,Patriotic,Celebrity,Danger,Animals,Sexuality ) %>
   scale_fill_brewer(palette="Dark2")
 ```
 
-![](superbowlads_files/figure-gfm/theme-1.png)<!-- -->
+![](figure-gfm/theme-1.png)<!-- -->
 
 An ad can have one or more of these components or even none of the six
 thematic contents we consider in our analysis (Figure 2). In fact, there
@@ -135,7 +135,7 @@ youtube %>% mutate(n_themes = Funny+Patriotic+Celebrity+Danger+Animals+Sexuality
   scale_fill_continuous(type = "viridis")
 ```
 
-![](superbowlads_files/figure-gfm/ntheme-1.png)<!-- -->
+![](figure-gfm/ntheme-1.png)<!-- -->
 
 We are interested in the variation in thematic contents of Super Bowl
 ads in two dimensions: years and brands. However, it is important to
@@ -162,7 +162,7 @@ youtube %>% group_by(year,brand) %>% count() %>%
   scale_fill_continuous(type = "viridis")
 ```
 
-![](superbowlads_files/figure-gfm/yearbrand-1.png)<!-- -->
+![](figure-gfm/yearbrand-1.png)<!-- -->
 
 ## Variation in Thematic Contents on Super Bowl Ads Over the Past Two Decades
 
@@ -202,7 +202,7 @@ youtube %>% select(year,superbowl_ads_dot_com_url,Funny,Patriotic,Celebrity,Dang
   scale_fill_brewer(palette="Dark2")
 ```
 
-![](superbowlads_files/figure-gfm/themeyear-1.png)<!-- -->
+![](figure-gfm/themeyear-1.png)<!-- -->
 
 ## Variation in Thematic Contents on Super Bowl Ads Across Different Brands
 
@@ -230,7 +230,7 @@ youtube %>%
   )
 ```
 
-![](superbowlads_files/figure-gfm/brand-1.png)<!-- -->
+![](figure-gfm/brand-1.png)<!-- -->
 
 There are significant different in thematic composition across brands
 (Figure 6). While E-trade, Bud Light, and Doritos focus on the humor
@@ -264,7 +264,7 @@ youtube %>% select(brand,Funny,Patriotic,Celebrity,Danger,Animals,Sexuality )%>%
   scale_fill_brewer(palette="Dark2")
 ```
 
-![](superbowlads_files/figure-gfm/themebrand1-1.png)<!-- -->
+![](figure-gfm/themebrand1-1.png)<!-- -->
 
 ## References
 
